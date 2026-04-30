@@ -1,0 +1,38 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build artifacts
+# Note: If you are using Option 1 (root repo) and want your source on GitHub
+# but your site hosted from the dist folder, you generally ignore dist
+# unless you are using a specific deployment workflow.
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.test
+.env.local
+
+# Testing
+coverage/

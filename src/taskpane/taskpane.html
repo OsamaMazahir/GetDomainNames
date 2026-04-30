@@ -1,0 +1,39 @@
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m" style="background-color: #f4f4f4; margin: 0; padding: 20px;">
+    <div style="background: white; padding: 15px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h2 style="color: #0078d4; margin-top: 0;">Get Domain Names</h2>
+        <p style="font-size: 14px;">1. Select your emails.<br>2. Click the button below.</p>
+        
+        <button id="run" style="background-color: #0078d4; color: white; border: none; width: 100%; padding: 12px; cursor: pointer; font-weight: bold; border-radius: 2px;">
+            Get Domain Names
+        </button>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        
+        <textarea id="item-body" spellcheck="false" style="width: 100%; height: 300px; border: 1px solid #ccc; font-family: 'Courier New', Courier, monospace; padding: 10px; box-sizing: border-box; resize: none;"></textarea>
+        
+        <p style="font-size: 11px; color: #666; margin-top: 10px;">Select all (Ctrl+A) in the box above to copy your list.</p>
+    </div>
+</body>
+
+</html>
